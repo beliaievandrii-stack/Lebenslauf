@@ -1,7 +1,9 @@
 body {
     margin: 0;
-    background: #bec4c5;
+    background-image: url('https://abrakadabra.fun/uploads/posts/2021-12/thumbs/1640976838_12-abrakadabra-fun-p-fon-dlya-rezyume-13.jpg');
     font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+     background-size: cover;
 }
 
 * {
@@ -12,16 +14,10 @@ body {
 
 .resume {
     display: flex;
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 0 auto;
     min-height: 100vh;
     background: white;
-}
-
-.indent_sides {
-    width: 5%;
-    background: #bec4c5;
-
 }
 
 aside {
@@ -31,8 +27,7 @@ aside {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
+    
 }
 
 main {
@@ -43,8 +38,12 @@ main {
 
 
 h2 {
+    display: flex;
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
+    margin-left: 3px;
+    align-items: left;
+    font-size: 30px;
 }
 
 p {
@@ -56,6 +55,7 @@ img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    margin-bottom: 15px;
 }
 
 .header h1 {
@@ -101,3 +101,32 @@ img {
 .about text {
     margin-left: 30px;
 }
+
+
+
+.contact-item:first-child {
+    gap: 16px;
+    margin-bottom: 22px;
+    padding-top: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.contact-text p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+    width: 40px;
+    height: auto;
+}
+
