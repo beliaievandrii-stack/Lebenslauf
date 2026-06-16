@@ -53,19 +53,18 @@ h2 {
     margin-top: 20px;
 }
 
-p {
+span {
     line-height: 1.5;
 }
 
 
 .profile-photo {
-    width: 90%;
+    width: 80%;
     height: auto;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
+    display: block;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 4%;
-
 }
 
 .header h1 {
@@ -96,7 +95,7 @@ p {
     margin-top: 10px;
 }
 
-main p {
+main span {
     font-family: 'Inter', system-ui, sans-serif;
     font-size: 20px;
     font-weight: 400;           /* Regular */
@@ -107,13 +106,12 @@ main p {
 
 }
 
-.kontakts .item:first-child {
+.kontakts .item:first-child, .sprachen .item:first-child {
     margin-top: 25px;
 }
 
 .item {
     display: flex;
-    align-items: flex-start;
     gap: 12px;
     margin-bottom: 20px;
     margin-left: 15px;
@@ -125,9 +123,9 @@ main p {
     line-height: 1.2;
 }
 
-.text-in-kontakts p{
+.text-in-kontakts span {
     font-size: 20px;
-    
+    display: flex;
 }
 
 .icon {
@@ -136,6 +134,7 @@ main p {
     margin-top: 7px;
     width: 45px;
     height: 45px;
+    stroke: #ece5e5;
 }
 
 .skills .item:first-child{
@@ -145,11 +144,27 @@ main p {
 .skills .icon {
     width: 49px;
     height: 49px;
+    stroke: #ece5e5;
 }
 
-.skills p {
+.skills span {
     font-size: 30px;
     line-height: 1.2;
     margin-top: 0.95rem;
-    text-align: center;
+}
+
+.mysql-icon {
+    width: 50px;
+    height: 55px;
+}
+
+.sprachen span {
+    flex: 1;
+    font-size: 25px;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.sprachen span:last-child {
+    text-align: right;
 }
