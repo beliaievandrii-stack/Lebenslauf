@@ -1,9 +1,16 @@
 body {
     margin: 0;
     background-image: url('https://abrakadabra.fun/uploads/posts/2021-12/thumbs/1640976838_12-abrakadabra-fun-p-fon-dlya-rezyume-13.jpg');
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
     background-repeat: no-repeat;
-     background-size: cover;
+    background-size: cover;
+}
+
+ul,
+ol {
+    list-style: none; 
+    margin: 0;        
+    padding: 0;       
 }
 
 * {
@@ -38,12 +45,12 @@ main {
 
 
 h2 {
-    display: flex;
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
     margin-left: 3px;
     align-items: left;
     font-size: 30px;
+    margin-top: 20px;
 }
 
 p {
@@ -51,11 +58,14 @@ p {
 }
 
 
-img {
-    width: 100%;
+.profile-photo {
+    width: 90%;
     height: auto;
+    margin-bottom: 30px;
+    border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-left: 4%;
+
 }
 
 .header h1 {
@@ -76,7 +86,6 @@ img {
     font-family: 'Playfair Display', cursive;
     font-style: italic;
     font-size: 1.39rem;
-    color: #000000;
   
     letter-spacing: 0.5px;
     font-weight: normal;
@@ -87,9 +96,9 @@ img {
     margin-top: 10px;
 }
 
-.about p {
-    font-family: 'Solway', serif;
-    font-size: 21px;
+main p {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 20px;
     font-weight: 400;           /* Regular */
     line-height: 1.1;
     max-width: 850px;
@@ -98,34 +107,49 @@ img {
 
 }
 
-.about text {
-    margin-left: 30px;
+.kontakts .item:first-child {
+    margin-top: 25px;
 }
 
-
-
-.contact-item:first-child {
-    gap: 16px;
-    margin-bottom: 22px;
-    padding-top: 25px;
-}
-
-.contact-item {
+.item {
     display: flex;
     align-items: flex-start;
     gap: 12px;
     margin-bottom: 20px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
-.contact-text p {
+.contact-text {
+    
     margin: 0;
     line-height: 1.2;
 }
 
+.text-in-kontakts p{
+    font-size: 20px;
+    
+}
+
 .icon {
+    display: flex;
     flex-shrink: 0;
-    margin-top: 2px;
-    width: 40px;
-    height: auto;
+    margin-top: 7px;
+    width: 45px;
+    height: 45px;
+}
+
+.skills .item:first-child{
+    margin-top: 10px;
+}
+
+.skills .icon {
+    width: 49px;
+    height: 49px;
+}
+
+.skills p {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: 0.95rem;
+    text-align: center;
 }
