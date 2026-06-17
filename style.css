@@ -4,6 +4,8 @@ body {
     font-family: 'Inter', system-ui, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
+    Palatino, URW Palladio L, serif;
+    
 }
 
 ul,
@@ -21,10 +23,10 @@ ol {
 
 .resume {
     display: flex;
-    max-width: 1300px;
+    width: 80%;
     margin: 0 auto;
     min-height: 100vh;
-    background: white;
+
 }
 
 aside {
@@ -34,12 +36,14 @@ aside {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    
+    max-width: 25rem;
 }
 
 main {
     flex: 2 ;
     padding: 30px;
+    width: auto;
+    background: white;
 }
 
 
@@ -65,34 +69,6 @@ span {
     display: block;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.header h1 {
-    font-family: 'Great Vibes', cursive;
-      font-size: 4.6rem;           /* подбери под себя */
-      font-weight: normal;
-      color: #1a1a1a;
-      margin: 0;
-      text-align: center;
-
-      line-height: 1.0;
-      letter-spacing: 0.5px;
-
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.30);
-}
-
-.header h2 {
-    font-family: 'Playfair Display', cursive;
-    font-style: italic;
-    font-size: 1.39rem;
-  
-    letter-spacing: 0.5px;
-    font-weight: normal;
-    color: #000;
-    text-align: center;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
-    
-    margin-top: 10px;
 }
 
 main span {
@@ -137,19 +113,19 @@ main span {
     stroke: #ece5e5;
 }
 
+
 .skills .item:first-child{
     margin-top: 10px;
 }
 
 .skills .icon {
-    width: 49px;
-    height: 49px;
+    width: 46px;
+    height: 46px;
     stroke: #ece5e5;
 }
 
 .skills span {
-    font-size: 30px;
-    line-height: 1.2;
+    font-size: 28px;
     margin-top: 0.95rem;
 }
 
@@ -160,11 +136,118 @@ main span {
 
 .sprachen span {
     flex: 1;
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 12px;
-    margin-left: 5px;
+    margin-left: 5px; 
 }
 
 .sprachen span:last-child {
     text-align: right;
+    margin-right: 10px;
+}
+
+.header h1 {
+    font-family: 'Helvetica Neue', Arial, system-ui;
+    font-size: 4.6rem;          
+    font-weight: normal;
+    color: #1a1a1a;
+    margin: 0;
+    text-align: center;
+
+    line-height: 1.0;
+    letter-spacing: 0.5px;
+
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.30);
+}
+
+.header h2 {
+    font-family: 'Helvetica Neue', Arial, system-ui;
+    font-size: 1.39rem;
+  
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    color: #000;
+    text-align: center;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+    
+    margin-top: 10px;
+}
+
+.about span  {
+    margin: 10px 30px -10px 30px;
+    display: flex;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 28px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #000000;
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 60px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 21px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border: 3px solid #000000;
+    z-index: 2;
+    box-shadow: 1 1 1 4px #474747;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.timeline h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.institution {
+    color: #000000;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: semi-bold;
+    
+}
+
+.schwerpunkte span {
+    font-size: 1.1rem;
+}
+
+.schwerpunkte ul {
+    padding-left: 20px;
+    margin: 3px 0;
+}
+
+.schwerpunkte li {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    margin-left: 15px;
+    list-style-image: url('Bilder/li.svg');
 }
