@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-image: url('https://abrakadabra.fun/uploads/posts/2021-12/thumbs/1640976838_12-abrakadabra-fun-p-fon-dlya-rezyume-13.jpg');
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: Palatino, "URW Palladio L", serif;
     background-repeat: no-repeat;
     background-size: cover;
     Palatino, URW Palladio L, serif;
@@ -23,13 +23,13 @@ ol {
 
 .resume {
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
     justify-content: center;
-    min-height: 100vh;
-
 }
 
 aside {
-    flex: 1;
+    flex: 0 0 320px;
     background: #2c3e50;
     color: white;
     padding: 20px;
@@ -39,7 +39,8 @@ aside {
 }
 
 main {
-    flex: 2 ;
+    flex: 1;
+    min-width: 0;
     padding: 30px;
     width: auto;
     background: white;
@@ -108,8 +109,8 @@ main span {
     display: flex;
     flex-shrink: 0;
     margin-top: 7px;
-    width: 45px;
-    height: 45px;
+    width: 2.5rem;
+    height: 2.5rem;
     stroke: #ece5e5;
 }
 
@@ -119,14 +120,15 @@ main span {
 }
 
 .skills .icon {
-    width: 46px;
-    height: 46px;
+    width: 2.5rem;
+    height: 2.5rem;
     stroke: #ece5e5;
 }
 
 .skills span {
     font-size: 28px;
-    margin-top: 0.95rem;
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
 .mysql-icon {
@@ -251,3 +253,42 @@ main span {
     margin-left: 15px;
     list-style-image: url('Bilder/li.svg');
 }
+
+@media (max-width: 768px) {
+    .resume {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column, aside {
+        max-width: 100%;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    span {
+        font-size: 0.5rem;
+    }
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
