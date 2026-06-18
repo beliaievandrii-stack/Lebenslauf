@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-image: url('https://abrakadabra.fun/uploads/posts/2021-12/thumbs/1640976838_12-abrakadabra-fun-p-fon-dlya-rezyume-13.jpg');
-    font-family: Palatino, "URW Palladio L", serif;
+    font-family: 'Inter', system-ui, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     Palatino, URW Palladio L, serif;
@@ -55,7 +55,6 @@ h2 {
     margin-left: 3px;
     align-items: left;
     font-size: 30px;
-    margin-top: 20px;
 }
 
 span {
@@ -150,7 +149,7 @@ main span {
 
 .header h1 {
     font-family: 'Helvetica Neue', Arial, system-ui;
-    font-size: 4.6rem;          
+    font-size: 3rem;          
     font-weight: normal;
     color: #1a1a1a;
     margin: 0;
@@ -168,14 +167,14 @@ main span {
   
     letter-spacing: 0.5px;
     font-weight: normal;
-    color: #000;
+    color: #070303;
     text-align: center;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
     
-    margin-top: 10px;
+    margin: 15px 0px 5px 0px;
 }
 
-.about span  {
+.header span  {
     margin: 10px 30px -10px 30px;
     display: flex;
     font-size: 1rem;
@@ -248,14 +247,32 @@ main span {
 }
 
 .schwerpunkte li {
+    position: relative;
+    padding-left: 25px;   /* место под иконку */
     font-size: 1.1rem;
-    margin-bottom: 0;
-    margin-left: 15px;
-    list-style-image: url('Bilder/li.svg');
+}
+
+.schwerpunkte li::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 14px;
+    height: 14px;
+
+    background: url("Bilder/li.svg") center/contain no-repeat;
+}
+
+.header-mobile {
+    display: none;
 }
 
 @media (max-width: 768px) {
     .resume {
+        display: flex;
         flex-direction: column;
     }
 
@@ -266,6 +283,7 @@ main span {
 
     body {
         font-size: 1rem;
+        justify-content: center;
     }
 
     h1 {
@@ -273,7 +291,10 @@ main span {
     }
 
     h2 {
+        display: flex;
         font-size: 1.5rem;
+        justify-content: center;
+
     }
 
     img {
@@ -283,6 +304,13 @@ main span {
 
     span {
         font-size: 0.5rem;
+    }
+    .header {
+        display: none;
+    }
+    .header-mobile {
+        display: flex;
+        justify-content: center;
     }
 }
 
