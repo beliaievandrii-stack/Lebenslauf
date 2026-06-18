@@ -23,8 +23,7 @@ ol {
 
 .resume {
     display: flex;
-    width: 80%;
-    margin: 0 auto;
+    justify-content: center;
     min-height: 100vh;
 
 }
@@ -44,6 +43,7 @@ main {
     padding: 30px;
     width: auto;
     background: white;
+    max-width: 60rem;
 }
 
 
